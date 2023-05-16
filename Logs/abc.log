@@ -1,0 +1,171 @@
+WARNING:2023-05-09 16:51:31,767:app:starting the data base connection
+ERROR:2023-05-09 16:51:31,768:settings:Error occurred: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+WARNING:2023-05-09 16:53:41,666:app:starting the data base connection
+ERROR:2023-05-09 16:53:41,666:settings:Error occurred: 'patient_name'
+WARNING:2023-05-09 16:54:31,914:app:starting the data base connection
+ERROR:2023-05-09 16:54:31,914:settings:Error occurred: 'patient_name'
+WARNING:2023-05-09 16:54:51,205:app:starting the data base connection
+ERROR:2023-05-09 16:54:51,426:settings:Error occurred: column "discharge_date" of relation "patient_data" does not exist
+LINE 1: INSERT INTO patient_data(name,admit_date,discharge_date)VALU...
+                                                 ^
+
+WARNING:2023-05-09 16:56:55,368:app:starting the data base connection
+ERROR:2023-05-09 16:56:56,091:settings:Error occurred: column "discharge_date" of relation "patient_data" does not exist
+LINE 1: INSERT INTO patient_data(name,admit_date,discharge_date)VALU...
+                                                 ^
+
+WARNING:2023-05-09 16:59:43,325:app:starting the data base connection
+WARNING:2023-05-09 16:59:43,522:app:close the database connection as admit_id is created
+WARNING:2023-05-09 17:00:07,802:app:starting the data base connection
+WARNING:2023-05-09 17:00:08,805:app:close the database connection as admit_id is created
+WARNING:2023-05-09 17:15:33,230:app:starting the data base connection
+ERROR:2023-05-09 17:15:33,231:app:Exception on /patient_treatment [POST]
+Traceback (most recent call last):
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 2137, in make_response
+    raise TypeError(
+TypeError: The view function for 'patient_treatment' did not return a valid response. The function either returned None or ended without a return statement.
+WARNING:2023-05-09 17:17:21,467:app:starting the data base connection
+WARNING:2023-05-09 17:18:26,193:app:starting the data base connection
+ERROR:2023-05-09 17:18:26,194:app:Exception on /patient_treatment [POST]
+Traceback (most recent call last):
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 2137, in make_response
+    raise TypeError(
+TypeError: The view function for 'patient_treatment' did not return a valid response. The function either returned None or ended without a return statement.
+WARNING:2023-05-09 17:24:24,690:app:starting the data base connection
+ERROR:2023-05-09 17:24:24,690:settings:Error occurred: 'dict' object is not callable
+WARNING:2023-05-09 17:25:08,439:app:starting the data base connection
+ERROR:2023-05-09 17:25:08,440:settings:Error occurred: 'dict' object is not callable
+WARNING:2023-05-09 17:25:48,187:app:starting the data base connection
+ERROR:2023-05-09 17:25:48,187:settings:Error occurred: 'dict' object is not callable
+WARNING:2023-05-09 17:26:20,080:app:starting the data base connection
+WARNING:2023-05-09 17:26:20,255:app:close the database connection as treatment data is created
+WARNING:2023-05-09 17:38:40,028:app:starting the data base connection
+WARNING:2023-05-09 17:38:40,182:app:close the database connection as admit_id is created
+ERROR:2023-05-09 17:50:58,896:settings:Error occurred: name 'date' is not defined
+ERROR:2023-05-11 11:28:46,888:settings:Error occurred: 'NoneType' object is not subscriptable
+ERROR:2023-05-11 11:30:03,798:settings:Error occurred: 'NoneType' object is not subscriptable
+ERROR:2023-05-15 21:18:17,034:settings:Error occurred: name 'patient_id' is not defined
+ERROR:2023-05-15 21:18:47,780:settings:Error occurred: name 'patient_id' is not defined
+WARNING:2023-05-15 21:40:30,854:app:starting the database connection
+ERROR:2023-05-15 21:40:30,945:app:Exception on /treatment/update/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113447/Desktop/Hospital management system/app.py", line 120, in treatment_update
+    cur.execute('UPDATE treatment_data SET treatment=%s,treatment_date=%s WHERE treatment_id = %s', (treatment_id,))
+IndexError: tuple index out of range
+WARNING:2023-05-15 21:42:51,348:app:starting the database connection
+ERROR:2023-05-15 21:42:51,438:app:Exception on /treatment/update/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113447/Desktop/Hospital management system/app.py", line 119, in treatment_update
+    cur.execute('UPDATE treatment_data SET treatment=%s,treatment_date=%s WHERE treatment_id = %s', (treatment_id,))
+IndexError: tuple index out of range
+WARNING:2023-05-15 21:45:11,831:app:starting the database connection
+ERROR:2023-05-15 21:45:11,833:app:Exception on /treatment/update/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113447/Desktop/Hospital management system/app.py", line 115, in treatment_update
+    cur.execute('SELECT treatment,treatment_date FROM treatment_data WHERE treatment_id = %s', (treatment,treatment_date,treatment_id,))
+TypeError: not all arguments converted during string formatting
+WARNING:2023-05-15 21:45:43,903:app:starting the database connection
+ERROR:2023-05-15 21:45:43,903:app:Exception on /treatment/update/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113447/Desktop/Hospital management system/app.py", line 115, in treatment_update
+    cur.execute('SELECT treatment,treatment_date FROM treatment_data WHERE treatment_id = %s', (treatment,treatment_date,treatment_id,))
+TypeError: not all arguments converted during string formatting
+WARNING:2023-05-15 21:46:56,866:app:starting the database connection
+WARNING:2023-05-15 21:53:33,308:app:starting the database connection
+ERROR:2023-05-15 21:53:33,490:app:Exception on /update/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113447/Desktop/Hospital management system/app.py", line 140, in treatment_update
+    cur.execute('UPDATE patient_data SET discharge_date=%s WHERE patient_id = %s', (patient_id,discharge_date))
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "2023-05-19"
+LINE 1: ...ient_data SET discharge_date=1 WHERE patient_id = '2023-05-1...
+                                                             ^
+
+WARNING:2023-05-15 21:53:53,755:app:starting the database connection
+ERROR:2023-05-15 21:53:54,172:app:Exception on /update/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113447/Desktop/Hospital management system/app.py", line 140, in treatment_update
+    cur.execute('UPDATE patient_data SET discharge_date=%s WHERE patient_id = %s', (patient_id,discharge_date,))
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "2023-05-19"
+LINE 1: ...ient_data SET discharge_date=1 WHERE patient_id = '2023-05-1...
+                                                             ^
+
+WARNING:2023-05-15 21:56:51,047:app:starting the database connection
+ERROR:2023-05-15 21:56:51,204:app:Exception on /update/1 [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113447/.local/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/bc2113447/Desktop/Hospital management system/app.py", line 140, in treatment_update
+    cur.execute('UPDATE patient_data SET discharge_date=%s WHERE patient_id = %s', (patient_id, discharge_date,))
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "2023-05-19"
+LINE 1: ...ient_data SET discharge_date=1 WHERE patient_id = '2023-05-1...
+                                                             ^
+
+WARNING:2023-05-15 22:02:01,565:app:starting the database connection
+WARNING:2023-05-15 22:08:05,340:app:starting the database connection
+WARNING:2023-05-15 22:08:05,431:app:close the database connection
